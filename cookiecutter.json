@@ -1,10 +1,10 @@
 {
     "repo_name": "my-repo-name",
     "package_name": "{{ cookiecutter.repo_name.lower().replace(' ', '_').replace('-', '_') }}",
-    "author_name": "Karl Hornlund",
-    "author_email": "karlhornlund@gmail.com",
-    "github_username": "khornlund",
-    "package_version": "0.0.1",
+    "author_name": "Fred Qi",
+    "author_email": "fred.qi@ieee.org",
+    "github_username": "fredqi",
+    "package_version": "0.1.0",
     "package_description": "Short description",
     "package_url": "https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.repo_name }}"
 }
