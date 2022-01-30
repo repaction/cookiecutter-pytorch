@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import io
 import os
 import re
@@ -35,6 +36,6 @@ setup(
     install_requires=requirements,
     classifiers=[
         "Programming Language :: Python",
-        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.8",
     ],
 )

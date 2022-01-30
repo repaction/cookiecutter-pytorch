@@ -1,8 +1,10 @@
+# Filename: logging.yml
 version: 1
 disable_existing_loggers: False
 formatters:
     simple:
-        format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+        format: "%(asctime)s, %(levelname)8s, %(name)s, %(message)s"
+        datefmt: '%Y-%m-%d %H:%M:%S'
 
 handlers:
     console:
@@ -40,4 +42,4 @@ handlers:
 
 root:
     level: INFO
-    handlers: [console, debug_file_handler, info_file_handler, error_file_handler]
+    handlers: [debug_file_handler]

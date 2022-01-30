@@ -2,11 +2,7 @@ name: {{cookiecutter.package_name}}
 dependencies:
   - python=3.8
   - matplotlib-base
-  - pandas
-  - pytest
-  - flake8
-  - rope
-  - autopep8
+  # pandas, numpy, scipy
   - click
   - pyyaml
   - h5py
@@ -14,9 +10,14 @@ dependencies:
   - fastai::opencv-python-headless
   - conda-forge::pytorch-lightning>=1.5.1
   - pytorch::torchvision
-  - pytorch::pytorch=1.10.0=py3.8_cuda11.3_cudnn8.2.0_0
+  - pytorch::pytorch=1.10
   - tensorboardx
+  - sphinx
   - pip
   - pip:
+    - pytest
+    - flake8
+    - rope
+    - autopep8
     - torchsummary
     - -e .  # install package in development mode
